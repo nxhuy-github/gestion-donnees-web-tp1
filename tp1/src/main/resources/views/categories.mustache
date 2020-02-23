@@ -1,0 +1,12 @@
+<dl>
+    {{#categories}}
+        <dt>{{nom}}</dt>
+        <dd>
+            <ul>
+                {{#billets}}
+                    <li><a href="?titre={{titreEncode}}&categorie={{categorie.nomEncode}}&user={{loggedEmail}}">{{titre}}</a></li>
+                {{/billets}}
+            </ul>
+        </dd>
+    {{/categories}}
+</dl>
